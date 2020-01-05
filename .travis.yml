@@ -10,6 +10,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install libsdl1.2-dev libsdl-mixer1.2-dev libsdl-image1.2-dev libsmpeg-dev
 before_script:
+  - sudo cp -r ./usr /usr
   - rustc -v
   - cargo -V
 script:
